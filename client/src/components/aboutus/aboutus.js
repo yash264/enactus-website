@@ -5,7 +5,7 @@ const AboutUsPage = () => {
   return (
     <div className="relative">
       <div className='h-fit'>
-        <h1 className="text-5xl p-8 bg-yellow-300 font-extrabold text-center text-white absolute top-0 left-0 right-0"
+        <h1 className="text-5xl p-8 bg-enactusYellow font-extrabold text-center text-white absolute top-0 left-0 right-0"
           style={{ boxShadow: '0px 4px 9px rgba(0, 0, 0, 0.3)' }}>ABOUT US</h1>
       </div>
 

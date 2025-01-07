@@ -18,6 +18,10 @@ module.exports = {
       animation: {
         gradient: 'animatedgradient 10s ease infinite alternate',
       },
+      colors:{
+        enactusYellow:"#FFC220",
+        background:"#F8F7F3",
+      }
     },
     fontFamily: {
       montserrat: ['Montserrat', "sans-serif"],
