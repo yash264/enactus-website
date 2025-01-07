@@ -8,16 +8,13 @@ const Webpage = ({ Project }) => {
     <div className=''>
       <div className='flex'>
         <div className='max-h-content border-8' style={{ flexGrow: 1 }}>
-          <div className="p-4"> {/* Add padding here */}
+          <div className="p-4">
             <Title title={Project} />
           </div>
           <div className='p-4 bg-gradient-to-b from-white to-gray-300'>
             <Description Project={Project} />
           </div>
         </div>
-        {/* <div style={{ flexGrow: 2 }}>
-          <ImageSlider name={Project} />
-        </div> */}
       </div>
     </div>
   );
