@@ -4,7 +4,6 @@ import Footer from './components/footer';
 import Carousel from './components/carouselbootstrap';
 import { Route, Routes,useLocation } from 'react-router-dom';
 import AboutUsPage from './components/aboutus/aboutus';
-import SetPage from './components/SetPage';
 import SliderComponent from './components/Gallery';
 import Selection from './components/teams2/Selection';
 import Marketing from './components/teams2/portfolio/Marketing';
@@ -13,6 +12,7 @@ import Field from './components/teams2/portfolio/Field';
 import Design from './components/teams2/portfolio/Design';
 import Content from './components/teams2/portfolio/Content';
 import Reserch from './components/teams2/portfolio/Reserch';
+import Projects from './pages/Projects';
 
 // import Gallery from './components/Page';
 
@@ -26,7 +26,7 @@ function App() {
         <Routes>
           <Route path='/blog' Component={Carousel} />
           <Route path='/about' Component={AboutUsPage} />
-          <Route path='/project' Component={SetPage} />
+          <Route path='/project' Component={Projects} />
           <Route path='/team' Component={Selection} />
           <Route path='/gallery' Component={SliderComponent} />
           <Route path='/marketingAndSponcership' element={<Marketing />} />
@@ -39,6 +39,7 @@ function App() {
           {/* <Route path='/gallery' Component={Gallery} /> */}
         </Routes>
       </div>
+      
       <Footer id="contact-us" />
     </>
   );
