@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from './components/navbar';
 import Footer from './components/footer';
 import Carousel from './components/carouselbootstrap';
 import { Route, Routes, useLocation } from 'react-router-dom';
@@ -13,6 +12,7 @@ import Design from './components/teams2/portfolio/Design';
 import Content from './components/teams2/portfolio/Content';
 import Reserch from './components/teams2/portfolio/Reserch';
 import Projects from './pages/Projects';
+import Navbar from './components/general/Navbar';
 // import ECart from './components/Ecart';
 // import Gallery from './components/Page';
 
@@ -20,7 +20,7 @@ function App() {
   const location = useLocation();
   return (
     <>
-      <Nav />
+      <Navbar />
       <div style={{ paddingTop: '80px' }}> {/* Adjust the value according to your navbar height */}
         {location.pathname === '/' && <Carousel />}
         <Routes>
