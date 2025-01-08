@@ -44,17 +44,17 @@ const Projects = () => {
               <div
                 key={project}
                 onClick={() => handleClick(project)}
-                className="relative z- group w-64 h-44 md:w-80 md:h-56 bg-yellow-300 rounded-lg overflow-hidden cursor-pointer"
+                className="relative z- group w-64 h-44 md:w-80 md:h-56 bg-yellow-300 rounded-lg overflow-hidden hover:shadow-2xl shadow-black  cursor-pointer"
               >
                 <div
-                  className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-300 transform scale-105 group-hover:scale-100"
+                  className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-500 transform scale-105 group-hover:scale-100"
                   style={{
                     backgroundImage: `url(${projectImages[project]})`,
                   }}
                 ></div>
 
-                <div className="relative z-10 flex justify-center text-zinc-900 items-center hover:text-enactusYellow w-full h-full bg-enactusYellow group-hover:bg-transparent transition-all duration-700">
-                  <span className="  text-5xl font-bold">{project.charAt(0).toUpperCase() + project.slice(1)}</span>
+                <div className="relative z-10 flex justify-center text-5xl group-hover:text-6xl text-zinc-200 items-center w-full h-full bg-enactusYellow group-hover:bg-transparent transition-all duration-500 ">
+                  <span className="font-extrabold">{project.charAt(0).toUpperCase() + project.slice(1)}</span>
                 </div>
               </div>
             ))}
