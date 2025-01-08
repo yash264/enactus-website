@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import enactusNavbarLogo from '../../assets/enactusNavbarLogo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const Links = [
     { name: 'Home', link: '/' },
@@ -16,6 +17,23 @@ const Navbar = () => {
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+
+    // Cleanup on component unmount
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="bg-gradient-to-r from-zinc-800 to-zinc-900 text-white shadow-md fixed top-0 left-0 w-full z-50">
@@ -68,6 +86,7 @@ const Navbar = () => {
       </div>
 
       <div
+        ref={menuRef}
         className={`fixed top-0 left-0 w-full transform transition-transform duration-700 ease-in-out bg-zinc-800 rounded-bl-[70px] rounded-br-[70px] ${
           isMenuOpen ? 'translate-y-[0px]' : '-translate-y-full'
         }`}
