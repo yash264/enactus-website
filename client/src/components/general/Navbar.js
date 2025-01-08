@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import enactusNavbarLogo from '../../assets/enactusNavbarLogo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const burgerRef = useRef(null); 
 
   const Links = [
     { name: 'Home', link: '/' },
@@ -20,7 +21,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (menuRef.current && !menuRef.current.contains(event.target) && !burgerRef.current.contains(event.target)) {
         setIsMenuOpen(false);
       }
     };
@@ -28,7 +29,6 @@ const Navbar = () => {
     document.addEventListener('mousedown', handleClickOutside);
     document.addEventListener('touchstart', handleClickOutside);
 
-    // Cleanup on component unmount
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
       document.removeEventListener('touchstart', handleClickOutside);
@@ -42,7 +42,7 @@ const Navbar = () => {
           <img src={enactusNavbarLogo} alt="Enactus Logo" className="h-10 md:h-14 xl:h-16" />
         </div>
 
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center" ref={burgerRef}>
           <button
             onClick={toggleMenu}
             className="focus:outline-none flex flex-col space-y-1 relative z-50"
@@ -86,7 +86,7 @@ const Navbar = () => {
       </div>
 
       <div
-        ref={menuRef}
+        ref={menuRef} 
         className={`fixed top-0 left-0 w-full transform transition-transform duration-700 ease-in-out bg-zinc-800 rounded-bl-[70px] rounded-br-[70px] ${
           isMenuOpen ? 'translate-y-[0px]' : '-translate-y-full'
         }`}
@@ -99,7 +99,7 @@ const Navbar = () => {
                 target={link.name === 'Enactus Worldwide' ? '_blank' : '_self'}
                 rel={link.name === 'Enactus Worldwide' ? 'noopener noreferrer' : undefined}
                 className="hover:text-yellow-500 hover:scale-105 transition-transform"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => setIsMenuOpen(false)} 
               >
                 {link.name}
               </a>
