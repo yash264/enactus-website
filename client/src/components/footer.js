@@ -9,7 +9,7 @@ import enactusLogo from '../assets/enactusNavbarLogo.png';
 const Footer = () => {
   return (
     <>
-      <footer  id="contact-us" className="font-montserrat mt-[800px] md:mt-[800px] bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 animate-gradient bg-300% py-10 md:py-16 rounded-t-[120px]">
+      <footer  id="contact-us" className="font-montserrat mt-[800px] bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 animate-gradient bg-300% py-10 md:py-16 rounded-t-[120px]">
         <div className="container mx-auto md:flex md:flex-col md:justify-center">
           <div className="flex justify-center">
             <h1 className="text-4xl md:text-5xl font-bold text-black-500">CONTACT US</h1>
