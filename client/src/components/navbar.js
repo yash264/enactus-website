@@ -9,6 +9,7 @@ const Nav = () => {
     { name: 'Gallery', link: '/gallery' },
     { name: 'Team', link: '/team' },
     { name: 'Contact Us', link: '/' },
+    {name: 'E Cart', link: '/ecart'},
     { name: 'Enactus Worldwide', link: 'https://enactus.org/' },
   ];
   const [open, setOpen] = useState(false);
