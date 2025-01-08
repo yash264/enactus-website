@@ -27,7 +27,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen bg-background overflow-hidden">
       <div className="text-center my-16 px-4">
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-black tracking-tight mb-6">
           Explore Our Projects
@@ -38,7 +38,7 @@ const Projects = () => {
       </div>
 
       {visible && (
-        <div className="flex justify-center items-center bg-background py-20">
+        <div className="flex justify-center items-center  py-20">
           <div className="grid gap-6 md:gap-10 xl:gap-12 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 justify-center items-center text-lg md:text-xl xl:text-2xl font-semibold">
             {['samvesh', 'neer', 'moonj', 'sahyog'].map((project) => (
               <div

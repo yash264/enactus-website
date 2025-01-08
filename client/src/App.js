@@ -13,7 +13,7 @@ import Design from './components/teams2/portfolio/Design';
 import Content from './components/teams2/portfolio/Content';
 import Reserch from './components/teams2/portfolio/Reserch';
 import Projects from './pages/Projects';
-import ECart from './components/Ecart';
+// import ECart from './components/Ecart';
 // import Gallery from './components/Page';
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
           <Route path='/fieldOfficer' element={<Field />} />
           <Route path='/contentDepartment' element={<Content />} />
           <Route path='/designDepartment' element={<Design />} />
-          <Route path='/ecart' element={<ECart />} />
+          {/* <Route path='/ecart' element={<ECart />} /> */}
           {/* <Route path='/contact' Component={Teams} /> */}
           {/* <Route path='/gallery' Component={Gallery} /> */}
         </Routes>
