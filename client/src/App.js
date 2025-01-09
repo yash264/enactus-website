@@ -14,7 +14,7 @@ import Content from './components/teams2/portfolio/Content';
 import Reserch from './components/teams2/portfolio/Reserch';
 import Projects from './pages/Projects';
 import ECart from './components/Ecart';
-// import Gallery from './components/Page';
+
 
 function App() {
   const location = useLocation();
