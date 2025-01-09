@@ -1,5 +1,5 @@
 import ImagesSlider from "../components/Homepage/ImagesSlider";
-import TeamCard from "../components/Homepage/TeamCard";
+//import TeamCard from "../components/Homepage/TeamCard";
 import  AnimatedTestimonials from "../components/Homepage/AnimatedTestimonials.jsx";
 
 import img1 from "../images/portfolio-1.jpg";
@@ -31,7 +31,7 @@ const testimonials = [
 ];
 
 const HomePage = () => (
-  <div className="h-[500px] w-full bg-[#1D1D20]">
+  <div className="h-[500px] w-full ">
     <ImagesSlider images={images} autoplay={true} direction="up">
       <h1
         className="absolute z-50 text-white px-6 py-2 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300"
@@ -41,7 +41,7 @@ const HomePage = () => (
       </h1>
     </ImagesSlider>
 
-    <div className="mt-16 mb-20 px-4 py-10 bg-[#1D1D20]">
+    <div className="mt-16 mb-20 px-2 py-2">
       <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
     </div>
     <Footer id="contact-us" />
