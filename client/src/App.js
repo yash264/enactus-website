@@ -12,7 +12,7 @@ import Design from './components/teams2/portfolio/Design';
 import Content from './components/teams2/portfolio/Content';
 import Reserch from './components/teams2/portfolio/Reserch';
 import Projects from './pages/Projects';
-//import ECart from './components/Ecart';
+import ECart from './components/Ecart';
 
 import Navbar from './components/general/Navbar';
 import HomePage from './pages/HomePage';
@@ -44,7 +44,7 @@ function App() {
         </Routes>
       </div>
 
-      <Footer id="contact-us" />
+      
     </>
   );
 }
