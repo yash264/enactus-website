@@ -15,6 +15,7 @@ import Projects from './pages/Projects';
 import ECart from './components/Ecart';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar from './components/general/Navbar';
+import HomePage from './pages/HomePage';
 // import ECart from './components/Ecart';
 // import Gallery from './components/Page';
 
@@ -23,8 +24,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <div style={{ paddingTop: '80px' }}> {/* Adjust the value according to your navbar height */}
-        {location.pathname === '/' && <Carousel />}
+      <div style={{ paddingTop: '95px' }}> {/* Adjust the value according to your navbar height */}
+        {location.pathname === '/' && <HomePage />}
         <Routes>
           <Route path='/blog' Component={Carousel} />
           <Route path='/about' Component={AboutUsPage} />
@@ -43,7 +44,7 @@ function App() {
         </Routes>
       </div>
 
-      <Footer id="contact-us" />
+      
     </>
   );
 }
