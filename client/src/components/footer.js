@@ -1,10 +1,10 @@
 import React from "react";
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
-import { AiFillYoutube } from 'react-icons/ai';
 import { CiPhone } from 'react-icons/ci';
 import { SlLocationPin } from 'react-icons/sl';
 import { FaRegEnvelope } from 'react-icons/fa';
 import { FaTwitter } from "react-icons/fa";
+import { BsCalendar2Check } from "react-icons/bs";
 import enactusLogo from '../assets/enactusNavbarLogo.png';
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -33,30 +33,42 @@ function Footer() {
             </h5>
 
             <div className="mt-6 lg:mb-0 mb-6">
-              <button
-                className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <FaTwitter className="fab fa-twitter hover:text-4xl" />
-              </button>
-              <button
-                className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <FaFacebookF className="fab fa-facebook-square hover:text-4xl" />
-              </button>
-              <button
-                className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <FaInstagram className="fab fa-dribbble hover:text-4xl" />
-              </button>
-              <button
-                className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <AiFillYoutube className="fab fa-github hover:text-4xl" />
-              </button>
+              <a href="https://www.facebook.com/enactusmnnit/">
+                <button
+                  className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <FaFacebookF className="fab fa-facebook-square hover:text-4xl" />
+                </button>
+              </a>
+
+              <a href="mailto:enactusmnnitallahabad@gmail.com">
+                <button
+                  className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <FaRegEnvelope className="fab fa-github hover:text-4xl" />
+                </button>
+              </a>
+
+              <a href="https://www.instagram.com/enactus_mnnit/">
+                <button
+                  className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <FaInstagram className="fab fa-dribbble hover:text-4xl" />
+                </button>
+              </a>
+
+              <a href="https://www.instagram.com/enactus_mnnit/">
+                <button
+                  className="bg-white text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <FaTwitter className="fab fa-twitter hover:text-4xl" />
+                </button>
+              </a>
+
             </div>
           </div>
 
@@ -78,15 +90,14 @@ function Footer() {
                     </p>
                   </li>
                   <li>
-                    <a href="mailto:enactusmnnitallahabad@gmail.com" class="flex items-center gap-2 justify-left m-2 " >
-                      <FaRegEnvelope className="mt-1" />
-                      enactusmnnitallahabad@gmail.com
-                    </a>
-                  </li>
-                  <li>
                     <p class="flex items-center gap-2 justify-left m-2 " >
                       <CiPhone className="mt-1" />
                       +91 8340556926</p>
+                  </li>
+                  <li>
+                    <p class="flex items-center gap-2 justify-left m-2 " >
+                      <BsCalendar2Check className="mt-1" />
+                      Help & Support</p>
                   </li>
                 </ul>
               </div>
@@ -119,22 +130,22 @@ function Footer() {
           style={{
             bottom: "20px", /* Distance from the bottom of the viewport */
             left: "20px", /* Distance from the right of the viewport */
-          }} 
+          }}
           onClick={scrollToTop} >
           <BsArrowUpCircleFill />
         </button>
 
-      <div className="flex flex-wrap items-center bg-black md:justify-between justify-center">
-        <div className="w-full md:w-4/12 mx-auto text-center">
+        <div className="flex flex-wrap items-center bg-black md:justify-between justify-center">
+          <div className="w-full md:w-4/12 mx-auto text-center">
 
-          <div className="text-sm text-blueGray-500 font-semibold py-1">
-            <span > © Enactus MNNIT-Allahabad 2k25 </span>
+            <div className="text-sm text-blueGray-500 font-semibold py-1">
+              <span > © Enactus MNNIT-Allahabad 2k25 </span>
+            </div>
+
           </div>
-
         </div>
-      </div>
 
-    </div>
+      </div>
     </footer >
   );
 }
