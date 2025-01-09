@@ -1,30 +1,32 @@
-import React from 'react'
-import Imagecard from "../Imagecard"
+import React from 'react';
+import Imagecard from "../Imagecard";
 
-const Template = (props) => {
-    return (
-        <div>
-            <div className="container mx-auto my-6 text-center place-items-center md:place-items-stretch ">
-                <div className="grid lg:grid-cols-3 gap-6 text-center text-lg md:grid-cols-2 sm:grid-cols-1 md:place-items-stretch  place-items-center">
+const Template = ({ name, yr, url }) => {
+ 
+    const safeUrl = Array.isArray(url) ? url : new Array(name.length).fill('/'); // Default to `/` if url is not provided
 
-                    {(() => {
-                        let imageCards = [];
-                        for (let i = 0; i < props.name.length; i++) {
-                            imageCards.push(
-                                <Imagecard
-                                    key={i}
-                                    name={props.name[i]}
-                                    yr={props.yr[i]}
-                                    url={props.url[i]}
-                                />
-                            );
-                        }
-                        return imageCards;
-                    })()}
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="py-5">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {name.map((memberName, index) => (
+          <div 
+            key={index}
+            className="transform transition-all duration-300"
+          >
+            <Imagecard
+              name={memberName}
+              yr={yr[index]}
+              url={safeUrl[index]}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  );
+};
 
-export default Template
+export default Template;
+
+

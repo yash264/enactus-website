@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.17",
     "ionicons": "^7.2.2",
+    "lucide-react": "^0.469.0",
     "mdb-react-ui-kit": "^7.2.0",
     "postcss": "^8.4.35",
     "react": "^18.2.0",
