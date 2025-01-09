@@ -13,7 +13,7 @@ import Content from './components/teams2/portfolio/Content';
 import Reserch from './components/teams2/portfolio/Reserch';
 import Projects from './pages/Projects';
 import ECart from './components/Ecart';
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar from './components/general/Navbar';
 import HomePage from './pages/HomePage';
 // import ECart from './components/Ecart';
