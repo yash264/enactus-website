@@ -1,55 +1,98 @@
-import React, { useState, useRef } from 'react'
-import Template from './Template'
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Template from '../Template';
 import Department from './Department';
+import { Users, UserCheck } from 'lucide-react';
 
 const Field = () => {
   const [showPresent, setShowPresent] = useState(true);
 
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { 
+        duration: 0.6,
+        when: "beforeChildren",
+        staggerChildren: 0.2
+      }
+    }
+  };
+
   return (
-    <div className="h-screen bg-zinc-50">
-      
+    <motion.div 
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+      className="min-h-screen bg-zinc-50"
+    >
       <Department tag="FIELD OFFICER" />
       
-      <div className="container mx-auto px-4">
-        
-        <div className="flex justify-end mt-8 mb-12">
-          <div className="bg-zinc-200 p-1 rounded-xl inline-flex">
+      <div className="container mx-auto px-4 py-12">
+        {/* Toggle Section */}
+        <motion.div 
+          className="flex justify-center mb-16"
+          variants={containerVariants}
+        >
+          <div className="bg-white p-2 rounded-2xl shadow-lg inline-flex gap-2">
             <button
-              className={`py-2 px-6 rounded-lg font-medium transition-all duration-200 ${
-                showPresent
-                  ? 'bg-yellow-600 text-white shadow-lg'
-                  : 'text-zinc-500 hover:text-zinc-700'
-              }`}
-              aria-pressed={showPresent}
               onClick={() => setShowPresent(true)}
+              className={`
+                flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-sm
+                transition-all duration-300 
+                ${showPresent 
+                  ? 'bg-yellow-500 text-black shadow-lg scale-105' 
+                  : 'text-zinc-500 hover:text-zinc-700 hover:bg-zinc-100'
+                }
+              `}
             >
-              Present
+              <Users className="w-4 h-4" />
+              Present Team
             </button>
             <button
-              className={`py-2 px-6 rounded-lg font-medium transition-all duration-200 ${
-                !showPresent
-                  ? 'bg-yellow-600 text-white shadow-lg'
-                  : 'text-zinc-500 hover:text-zinc-700'
-              }`}
-              aria-pressed={!showPresent}
               onClick={() => setShowPresent(false)}
+              className={`
+                flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-sm
+                transition-all duration-300
+                ${!showPresent 
+                  ? 'bg-yellow-500 text-black shadow-lg scale-105' 
+                  : 'text-zinc-500 hover:text-zinc-700 hover:bg-zinc-100'
+                }
+              `}
             >
+              <UserCheck className="w-4 h-4" />
               Alumni
             </button>
           </div>
-        </div>
-        
-        
-        <div className="my-10 pb-16">
-          {showPresent ?  (
-        <Template name={["Shruti Mayank", "Adya Sharma", "Ayush Aman", "Himanshu Tripathi", "Gawtham Vellore"]} pos={["head", "Member", "Member", "head", "member"]} yr={["2019", "2021", "2034", "2022", "2043"]} />
-      ) : (
-        <Template name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]} pos={["alumni1", "alumni2", "alumni", "head"]} yr={["2019", "2021", "2009", "2022"]} />
-      )}
-   
-        </div>
+        </motion.div>
+
+        {/* Team Members Section */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={showPresent ? 'present' : 'alumni'}
+            initial={{ opacity: 0, x: showPresent ? 100 : -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: showPresent ? -100 : 100 }}
+            transition={{ duration: 0.5 }}
+          >
+            {showPresent ? (
+              <Template
+                name={["Shruti Mayank", "Himanshu Tripathi", "Shaurya Raj Srivastava", "Aniket Shah"]}
+                yr={["2024", "2024", "2024", "2024"]}
+                url={["/", "/", "/", "/"]}
+              />
+            ) : (
+              <Template
+                name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]}
+                yr={["2019", "2021", "2009", "2022"]}
+                url={["/", "/", "/", "/"]}
+              />
+            )}
+          </motion.div>
+        </AnimatePresence>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

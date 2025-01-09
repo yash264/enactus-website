@@ -1,5 +1,6 @@
 import React from 'react';
-import { Linkedin } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Linkedin, Mail, Calendar } from 'lucide-react';
 import Member1 from "./photos/TeamMembers/Shruti Mayank.JPG";
 import Member2 from "./photos/TeamMembers/AdyaSharma.jpg";
 import Member3 from "./photos/TeamMembers/Ayush Aman.jpeg";
@@ -37,38 +38,54 @@ const Imagecard = ({ name, yr, url }) => {
       imageSource = logo;
   }
   return (
-    <div className=" max-w-sm h-auto group bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl">
-      <div className="aspect-square overflow-hidden">
+    <motion.div 
+      className="group bg-white rounded-2xl overflow-hidden shadow-lg h-full"
+      whileHover={{ scale: 1.02 }}
+      transition={{ duration: 0.3 }}
+    >
+      <div className="relative aspect-[4/3] overflow-hidden">
         <img
           src={imageSource}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       
-      <div className="px-6 py-2 space-y-4">
-        <h3 className="font-bold text-2xl text-zinc-800 tracking-tight">
+      <div className="p-6">
+        <h3 className="font-bold text-2xl text-zinc-800 tracking-tight mb-4">
           {name}
         </h3>
         
-        <div className="space-y-2">
-          <p className="text-zinc-600">
-            <span className="font-semibold">Batch of </span>
-            <span className="text-yellow-600 font-bold">{yr}</span>
-          </p>
+        <div className="space-y-4">
+          <div className="flex items-center gap-2 text-zinc-600">
+            <Calendar className="w-4 h-4 text-yellow-600" />
+            <span className="text-sm">Batch of</span>
+            <span className="font-semibold text-yellow-600">{yr}</span>
+          </div>
           
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-zinc-600 hover:text-yellow-600 transition-colors duration-200"
-          >
-            <Linkedin className="w-5 h-5" />
-            <span className="font-medium">LinkedIn</span>
-          </a>
+          <div className="flex gap-3">
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-100 text-zinc-700 hover:bg-yellow-600 hover:text-white transition-colors duration-300"
+            >
+              <Linkedin className="w-4 h-4" />
+              <span className="text-sm font-medium">LinkedIn</span>
+            </a>
+            
+            <a
+              href={`mailto:${name.toLowerCase().replace(' ', '.')}@example.com`}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-100 text-zinc-700 hover:bg-yellow-600 hover:text-white transition-colors duration-300"
+            >
+              <Mail className="w-4 h-4" />
+              <span className="text-sm font-medium">Email</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
