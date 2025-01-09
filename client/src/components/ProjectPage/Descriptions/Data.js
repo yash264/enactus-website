@@ -2,156 +2,183 @@ import React from 'react'
 
 const Data = ({ Project }) => {
     const jsxObjectsArray = [
-        {
-            name: "neer",
-            jsxElement:
-                <div className="text-black p-4 pt-2">
-                    <h2 className="text-3xl font-bold mb-4">ABOUT</h2>
-                    <p className="mb-8">
-                        India is blessed with many unique craftsmanship. One such profession is of potters. But now this art is limited to some rural regions only. It is hard to find a good pot without a massive overhead price. Project "NEER" mainly focuses on uplifting the craftsmanship of the potter community in the city of Prayagraj. Despite many benefits of Pots/Pottery, the common mass prefers plastic. This not only affects the income of the potter community but also creates pollution. This art is gradually dying due to a lack of connectivity to the market and due to the use of excessive plastics. Not only will the project help the community to create another source of income, but it will also keep them motivated in what they do. Prayagraj is situated on the riverbanks of the Ganges. The groundwater needs minimal purification. The potter community in the city is highly skilled. It took us no time in finding a community which could do the job. Also, there are many poor communities of people who can’t afford RO water purifiers. Most of the commercially available water purifiers are costly and generally made up of plastics. So, to reduce the use of plastic and also encourage AatmaNirbhar Bharat Abhiyan we excel towards this project. By this project, we are also aiming to give the poor potter community a chance to expand their market other than their normal customers.
-                    </p>
+      {
+        name: "neer",
+        jsxElement: (
+            <div className="text-black p-6  rounded-lg ">
+                <h2 className="text-4xl font-bold text-gray-800 mb-6">ABOUT</h2>
+                <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+                    India is home to numerous traditional crafts, and one such skill is pottery. Unfortunately, this ancient craft is now largely confined to rural regions, and it’s becoming challenging to find affordable quality pots. Project "NEER" is focused on uplifting the pottery craftsmanship of the potter community in Prayagraj. 
+                    <br /><br />
+                    Despite the numerous advantages of clay pots, such as purifying water naturally, many people still choose plastic alternatives. This preference is not only harming the potter community’s income but is also contributing to the growing environmental pollution. This project intends to revive this art by connecting potters to the market while addressing plastic waste concerns. We aim to give the community another source of income, keep them motivated in their craft, and support India’s vision of "AatmaNirbhar Bharat" (Self-reliant India).
+                    <br /><br />
+                    Prayagraj, located on the banks of the Ganges, has a naturally pure groundwater source. Many poorer communities cannot afford modern water purifiers, and most commercial purifiers are plastic-based. Our initiative focuses on reducing plastic use while supporting local potter communities to expand their market base beyond their regular customers.
+                </p>
+    
+                <h2 className="text-4xl font-bold text-gray-800 mb-6">PRODUCT PROPOSAL</h2>
+                <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+                    <li>The water purifier design consists of two mud pots stacked one on top of the other, with slight variations in size and shape. The primary filtration component is a ceramic candle, through which impure water percolates downward to the lower container.</li>
+                    <li>The purifier works by removing turbidity, suspended materials, bacteria, protozoa, and cysts through mechanical trapping and adsorption in the micro-scale pores of the ceramic candle (it does not remove pathogens).</li>
+                    <li>This filtration method reduces the Total Dissolved Solids (TDS) level of the water, providing clean water with a balanced TDS level.</li>
+                    <li>The effectiveness of the filter depends on factors like the production quality, the initial water quality, and user handling practices. Highly turbid or iron-heavy water can clog the ceramic candle pores, necessitating regular cleaning.</li>
+                </ul>
+    
+                <h2 className="text-4xl font-bold text-gray-800 mb-6">PROJECT UPDATE</h2>
+                <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+                    <li>Initially, we conducted several market surveys to understand the demand for such a product.</li>
+                    <li>We approached potter communities, sharing our design for the mud pot water filter and gathering feedback.</li>
+                    <li>Samples of the mud pot filter were collected and tested with different water samples to evaluate performance.</li>
+                </ul>
+    
+                <h2 className="text-4xl font-bold text-gray-800 mb-6">CHALLENGES</h2>
+                <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+                    <li>Ensuring that all components of the product are eco-friendly while maintaining the safety and health of consumers.</li>
+                    <li>Developing a design that is easy for potters to understand and implement.</li>
+                    <li>Ensuring that the design doesn’t increase production time or cost unnecessarily.</li>
+                    <li>Providing product variations to appeal to a broader market and different consumer needs.</li>
+                    <li>Building an efficient supply chain that minimizes operational costs while maintaining quality.</li>
+                    <li>Maximizing transparency in the system to prevent any exploitation of the potter community and ensure fair compensation.</li>
+                </ul>
+            </div>
+        ),
+    }
+    ,
+    
+    {
+      name: "moonj",
+      jsxElement: (
+          <div className="text-black p-6  rounded-lg">
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">ABOUT</h2>
+              <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+                  Before diving into the project, let’s take a moment to understand what <strong>Moonj</strong> is all about and why it holds such significance in Prayagraj.
+                  <br /><br />
+                  **Moonj** refers to the outer layer of a type of grass known as 'Sarpat.' This layer is peeled, dried, and knotted, often referred to locally as **'Balla.'** Kaasa grass is wrapped with Moonj grass to create intricate basketry motifs, through techniques like dyeing and stitching. The final product, a collection of beautifully crafted baskets, carries a unique cultural touch of Allahabad's heritage.
+                  <br /><br />
+                  Unfortunately, Moonj basketry—a part of Allahabad's oldest traditions—has faced a decline. To bring recognition back to this art form, **Enactus** has embraced this project to give **Moonj basketry** the recognition it rightly deserves.
+              </p>
+              <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+                  <strong className="text-xl underline text-gray-800">Motivation</strong><br />
+                  The Naini area in Prayagraj has long been known for its Moonj craft. However, this ancient craft has gradually lost its shine. Now, a variety of products, such as baskets, coasters, bags, and decorative items, are made from Moonj, all of which are eco-friendly and capable of competing in national and international markets.
+                  <br /><br />
+                  <strong className="text-xl underline text-gray-800">Goal</strong><br />
+                  Our team aims to address key issues such as supply chain challenges, marketing hurdles, promotion strategies, and technological R&D. Through these efforts, we hope to restore the glory of this iconic craft.
+              </p>
+  
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Insights from Our First Field Visit:</h3>
+              <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+                  <li>Technological deficiency—most artisans have yet to adapt to the e-commerce world.</li>
+                  <li>Women’s work lacks support from men and children, causing over-reliance on middlemen, which diminishes their earnings.</li>
+                  <li>Underpricing—Monthly income of INR 1500 does not reflect the time, effort, or artistry involved in the craft.</li>
+                  <li>Slow production rates—Preference for manual hand-knitting over machine assistance slows down the entire production process.</li>
+              </ul>
+  
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">LOOKING FORWARD TO:</h2>
+              <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+                  <li>Exploring modern techniques like needle movement to enhance production efficiency while retaining the quality and employment rate.</li>
+                  <li>Using Prayagraj's cultural heritage as a selling point, with potential markets like Magh Mela and other fairs providing direct sales opportunities.</li>
+                  <li>Empowering artisans with technological knowledge, enabling them to enter e-commerce platforms and reach a broader audience.</li>
+                  <li>Executing promotional campaigns to reinstate the recognition and value of **Moonj craft.**</li>
+              </ul>
+  
+              <p className="mb-8 text-lg text-gray-700">
+                  We are excited to continue working on this meaningful project and breathe new life into the cherished heritage of Prayagraj.
+              </p>
+          </div>
+      ),
+  }
+  
+  ,
+  {
+    name: "sahyog",
+    jsxElement: (
+        <div className="text-black p-6  rounded-lg ">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">OUR AIM</h2>
+            <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+                Our mission is to amplify the efforts of government and non-profit organizations by supporting underprivileged sections of society. Through "Project Sahyog," ENACTUS works to provide these communities with necessary training, awareness, and resources to fully leverage available opportunities. Our goal is to promote understanding of the government's policies and schemes that can benefit these individuals and empower them for better opportunities.
+            </p>
 
-                    <h2 className="text-3xl font-bold mb-4">PRODUCT PROPOSAL</h2>
-                    <ul className="list-disc pl-6 mb-8">
-                        <li>The design of the water purifier will consist of two mud pots one on top of another with a little variation in size and shape. The main part of the purifier is a ceramic candle from which impurified water percolates downward to the lower container.</li>
-                        <li>Turbidity, suspended materials, bacteria, protozoa, and cysts are removed (not pathogens) from water through mechanical trapping and adsorption in micro-scale pores of ceramic candles.</li>
-                        <li>This method lowers the TDS (Total Dissolved Solids) of the water sample and gives you water of a certain TDS (but not below that).</li>
-                        <li>The efficiency of the filter also depends on the production quality, the initial water quality, and the handling practices of users. Highly turbid or iron-containing water may plug candle pores easily so such containers and candles need to be cleaned frequently.</li>
-                    </ul>
+            <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+                <strong className="text-xl underline text-gray-800">Motivation</strong><br />
+                Despite various government efforts to spread awareness and provide support, significant sections of society continue to be exploited by middlemen, and their lack of awareness and access to resources prevents them from progressing. In today's fast-paced digital world, a lack of technical literacy is also a critical factor that impedes the growth of underprivileged communities.
+            </p>
 
-                    <h2 className="text-3xl font-bold mb-4">PROJECT UPDATE</h2>
-                    <ul className="list-disc pl-6 mb-8">
-                        <li>Firstly, we conducted different market surveys so that we could get an idea of the use of the product.</li>
-                        <li>Then we approached the potter communities and explained them the design of mud pot filter.</li>
-                        <li>Then the samples of mud pot filter were collected and were tested on different water samples.</li>
-                    </ul>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">MAJOR DELIVERABLES</h2>
+            <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+                <li>Organizing training camps to empower rural youth and ensure they can access essential digital services.</li>
+                <li>Launching awareness campaigns to educate people about vital government schemes and how to access them.</li>
+                <li>Setting up health camps, especially targeting rural women, to promote vaccination and menstrual hygiene awareness.</li>
+            </ul>
 
-                    <h2 className="text-3xl font-bold mb-4">CHALLENGES</h2>
-                    <ul className="list-disc pl-6 mb-8">
-                        <li>Maximum components should be possibly eco-friendly and at the same time not compromising with the health of customers.</li>
-                        <li>Finding a design which is easy to comprehend and implement by potters.</li>
-                        <li>The design should not require significantly extra time and effort which could eventually lead to a rise in cost.</li>
-                        <li>Providing variations in the product to trigger the maximum possible market base.</li>
-                        <li>Establishment of the entire supply chain keeping in mind to minimize the overall operational economy as well.</li>
-                        <li>Keeping the scope of exploitation of potters due to the system at its utmost least by maximizing transparency.</li>
-                    </ul>
-                </div>,
-        },
-        {
-            name: "moonj",
-            jsxElement: <div className="text-black p-4 pt-2">
-            <h2 className="text-3xl font-bold mb-4">ABOUT</h2>
-            <p className="mb-8">
-              Our most recent venture in collaboration with the initiative by MHRD and state government of Uttar Pradesh under the <a href="http://odopup.in/en/article/district-profile-allahabad">'One District One Product Scheme'.</a> The project aims at empowering the indigenous Moonj based handicraft products which have been facing existential challenges over the years.
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">AREAS COVERED</h2>
+            <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+                <li><strong>EMPLOYMENT:</strong> Enhancing knowledge about various government employment schemes and resources.</li>
+                <li><strong>HEALTH:</strong> Promoting basic hygiene practices, distributing sanitary products, and informing individuals about healthcare providers.</li>
+                <li><strong>EDUCATION:</strong> Encouraging local school visits, providing children’s study materials, and raising awareness about government scholarships and educational support.</li>
+            </ul>
+
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">VILLAGES COVERED</h2>
+            <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+                Currently, our college supports five villages. Before the onset of the COVID-19 pandemic, we started our work in Musepur village, focusing on community development and identifying areas where support was most needed.
+            </p>
+
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">CONCLUSION</h2>
+            <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+                Project Sahyog, driven by the various government initiatives for rural upliftment, still has a long way to go. ENACTUS MNNIT is committed to pushing the envelope for progress, not just highlighting the importance of community support but also encouraging others to join this mission for empowerment and improvement.
+            </p>
+        </div>
+    ),
+}
+
+,
+{
+  name: "samvesh",
+  jsxElement: (
+      <div className="text-black p-6  rounded-lg ">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">OUR AIM</h2>
+          <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+              We launched the project in 2015-16 with the mission to replace harmful polythene bags with a sustainable, cost-effective alternative—paper. 
               <br /><br />
-              Before diving into the project, we would love to introduce to you what this project is about. What moonj is? And why is Moonj basketry a pride for our Prayagraj.
-              Moonj is the outer layer of a type of grass called ‘sarpat.’ This layer is peeled off and knotted as it is easy to store and dry. These knots are locally known as 'balla'. Kaasa grass is dried and wrapped with moonj grass by rolling around kaasa. The motifs of basketry are then formed by dyeing and stitching with great expertise. The final product baskets, have a touch of our culture.
-              Moonj basketry comprises our Allahabad's oldest heritage and with time its awareness is decreasing. Hence to bring back this beautiful craft, we at Enactus decided to dive into this project and give this project the recognition it deserves.
-            </p>
-            <p className="mb-8">
-              <strong className="text-xl underline">Motivation</strong><br /> 
-              The Naini area of Allahabad has been recognized widely for its <a href="https://medium.com/direct-create/moonj-basketry-form-uttar-pradesh-cfd5aad98dd0">Moonj Craft.</a> But with time, it has been losing its charm and today it is significantly far from the time of its glory. The market offers a variety of products made from the moonj like basket(daliya in Hindi), coaster stand, bags, decorative items, and more. Eco-friendly moonj products have the potential to do well in national as well as the international markets.
+              Our goal was to provide a practical, eco-friendly substitute for polythene bags while promoting self-reliance and empowering women. We focused on equipping women with valuable skills to support both their personal growth and the overall success of the project.
+          </p>
+
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">MAJOR DELIVERABLES</h2>
+          <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+              <li>
+                  <strong className="text-lg underline text-gray-800">Product Development:</strong><br />
+                  Our R&amp;D team worked tirelessly to design a cost-effective and high-quality product that offers a feasible alternative to traditional carry bags.
+              </li>
+              <br />
+              <li>
+                  <strong className="text-lg underline text-gray-800">Community Research:</strong><br />
+                  We conducted surveys within the local communities of Teliyarganj and Phaphamau to recruit volunteers passionate about joining the project’s mission.
+              </li>
+              <br />
+              <li>
+                  <strong className="text-lg underline text-gray-800">Market Research:</strong><br />
+                  Our Marketing team studied the local markets in Teliyarganj to assess the existing bag types and their quality, helping us identify gaps in the current market.
+              </li>
+          </ul>
+
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">FINAL PRODUCT</h2>
+          <ul className="list-disc pl-6 mb-8 text-lg text-gray-700">
+              <li>A durable, eco-friendly bag made from discarded newspapers and magazines, promoting recycling and sustainability.</li>
+              <li>High-quality, long-lasting paper bags designed through extensive R&amp;D research to ensure durability.</li>
+              <li>Paper bags with strong string handles that provide better grip and sturdiness, an upgrade over traditional plastic bags.</li>
+          </ul>
+
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">CONCLUSION</h2>
+          <p className="mb-8 text-lg text-gray-700 leading-relaxed">
+              We substituted synthetic adhesives with a traditional, eco-friendly wheat paste that has been used for centuries in India. 
               <br /><br />
-              <strong className="text-xl underline">Goal</strong><br /> 
-              The team aspires to plunge into the various aspects related to the supply chain, marketing, promotion, and technological R&amp;D assistance to tackle the various challenges that have been holding back this art to achieve the glory it deserves.
-            </p>
-            <h3 className="text-2xl font-bold mb-4">Insights from our first field visit:</h3>
-            <ul className="list-disc pl-6 mb-8">
-              <li>They are technologically deficient which means they are not at all prone to the e-commerce world.</li>
-              <li>Kids and men aren't supporting women. The work solely is being done by women. Which leads to dependency on a middle man, who then takes away a lot of their profit. This also leads to a lack of interest in the younger generation which in turn leads to degradation of the whole art.</li>
-              <li>Cost is too low. The monthly income of 1500 INR is too low regarding the time and efforts they put in.</li>
-              <li>Production rate is slow. Since they don't prefer machines and do knitting by hand it takes a lot of time.</li>
-            </ul>
-            <h2 className="text-3xl font-bold mb-4">LOOKING FORWARD TO</h2>
-            <ul className="list-disc pl-6 mb-8">
-              <li>The manual process is time-consuming. At times, it takes weeks to design a moonj product. We are trying methods, which can be used in needle movement for knotting the spirals so that the products are masterly crafted. To create a space in the market, we need to increase production without affecting employment.</li>
-              <li>We will use the cultural heritage of Prayagraj. The Magh Mela and other Fairs will act as a direct source of sale.</li>
-              <li>Making them technologically aware so that they can be aware of the vast internet world. And make use of e-commerce websites.</li>
-              <li>We are looking forward to do advertisements and help this artform regain its lost recognition.</li>
-            </ul>
-            <p className="mb-8">We are fully fledged to work on it again and receiving this beautiful heritage of Prayagraj.</p>
-          </div>
-          ,
-        },
-        {
-            name: "sahyog",
-            jsxElement: <div className="text-black p-4 pt-2">
-            <h2 className="text-3xl font-bold mb-4">OUR AIM</h2>
-            <p className="mb-8">
-              We aim at strengthening the initiatives being run by the government of India and various non-profit organizations by synergizing them to aggrandize the target masses through proper training, enabling them to make the most out of opportunities. We at ENACTUS aim to provide support for this noble work under "Project Sahyog". Our aim is reaching out to the underprivileged sections of society and making them aware of different schemes and policies undertaken by the government for their welfare and helping them avail those schemes.
-            </p>
-            <p className="mb-8">
-              <strong className="text-xl underline">Motivation</strong><br /> 
-              Despite the efforts of the government to increase the reach of its schemes and initiatives for the underprivileged, a section of society still remains left behind mainly due to the involvement of some sleazy middlemen. Lack of awareness and information deficit also exacerbate the problem. In this fast-paced digital era, lack of technical knowledge also holds back the underprivileged section and hinders their progress.
-            </p>
-            <h2 className="text-3xl font-bold mb-4">MAJOR DELIVERABLES</h2>
-            <ul className="list-disc pl-6 mb-8">
-              <li>We conduct training camps for rural folks (especially youths) enabling them to avail key digital services.</li>
-              <li>We organize awareness campaigns about the crucial schemes being run by the government and the ways to access them.</li>
-              <li>We arrange health camps (specially for women folk) to spread awareness about the importance of vaccination and menstrual hygiene among rural women.</li>
-            </ul>
-            <h2 className="text-3xl font-bold mb-4">AREAS COVERED</h2>
-            <ul className="list-disc pl-6 mb-8">
-              <li>EMPLOYMENT - various employment schemes and websites.</li>
-              <li>HEALTH - basic hygiene habits, sanitary napkins, local hospital and doctors contact info.</li>
-              <li>EDUCATION - local school visit, children’s study material, different govt. educational scholarships.</li>
-            </ul>
-            <h2 className="text-3xl font-bold mb-4">VILLAGES COVERED</h2>
-            <p className="mb-8">
-              Our College has 5 villages under us. Before the COVID scenario, we had started our work in Musepur village.
-            </p>
-            <h2 className="text-3xl font-bold mb-4">CONCLUSION</h2>
-            <p className="mb-8">
-              Our project SAHYOG, which is inspired by the schemes that the government implements for the rural sections of our nation, definitely has a long way to go. ENACTUS MNNIT believes in taking the plunge for the better and shining the light within us for others.
-            </p>
-          </div>
-          ,
-        },
-        {
-            name: "samvesh",
-            jsxElement:
-            <div className="text-black p-4 pt-2">
-            <h2 className="text-3xl font-bold mb-4">OUR AIM</h2>
-            <p className="mb-8">
-              We kickstarted the project in 2015-16 by aiming at replacing polythene bags with an eco-friendly, more economical substitute - Paper.
-              <br />
-              Our objective was to launch a viable and eco-friendly alternative to polythene bags, aiming at Self-Reliance and community empowerment. We primarily targeted women, providing them with the necessary aids, thus helping them enhance their skills as project workers and improvise wherever needed.
-            </p>
-          
-            <h2 className="text-3xl font-bold mb-4">MAJOR DELIVERABLES</h2>
-            <ul className="list-disc pl-6 mb-8">
-              <li>
-                <strong className="text-lg underline">Product Development:</strong><br />
-                Our R&amp;D team took up the responsibility to develop a product that met the needs of the public in general in terms of cost, quality, and availability of other carry bags in the market.
-              </li>
-              <br />
-              <li>
-                <strong className="text-lg underline">Community Research:</strong><br />
-                Our team of Field Officers surveyed the communities in and around Teliyarganj and Phaphamau to seek a community to volunteer for the progression of the project.
-              </li>
-              <br />
-              <li>
-                <strong className="text-lg underline">Market Research:</strong><br />
-                Our Marketing team carried out market surveys in the markets of Teliyarganj to take stock of the market and assess the conventional bags in use.
-              </li>
-            </ul>
-          
-            <h2 className="text-3xl font-bold mb-4">FINAL PRODUCT</h2>
-            <ul className="list-disc pl-6 mb-8">
-              <li>A sturdy and eco-friendly bag made out of discarded magazines and newspapers.</li>
-              <li>Tough and durable bags with unbeatable quality made after careful research by our R&amp;D department.</li>
-              <li>String attached to paper bags provided excellent grip and were a major step-up from the conventional ones.</li>
-            </ul>
-          
-            <h2 className="text-3xl font-bold mb-4">CONCLUSION</h2>
-            <p className="mb-8">
-              We replaced conventional synthetic glues with wheat paste (used since antiquity in India) for sticking.
-              <br />
-              We at Enactus believe in taking the plunge when no one else does. With a positive mindset and clear vision, we're heading for the better. For more updates on our work, stay tuned. You can gather more information about us on our Facebook page <a href="https://www.facebook.com/enactusmnnit/" className="text-blue-500">here.</a>
-            </p>
-          </div>
-          ,
-        }
+              At Enactus, we pride ourselves on leading initiatives, even when faced with challenges. By maintaining a clear vision and a positive attitude, we aim to create a better future for everyone involved. 
+              <br /><br />
+              For the latest updates on our impact and progress, please connect with us on our [Facebook page](https://www.facebook.com/enactusmnnit/).
+          </p>
+      </div>
+  ),
+}
+
+
     ];
     const selectedObject = jsxObjectsArray.find(obj => obj.name === Project);
 
