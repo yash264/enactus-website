@@ -38,7 +38,7 @@ function App() {
           <Route path='/fieldOfficer' element={<Field />} />
           <Route path='/contentDepartment' element={<Content />} />
           <Route path='/designDepartment' element={<Design />} />
-          {/* <Route path='/ecart' element={<ECart />} /> */}
+          <Route path='/ecart' element={<ECart />} />
           {/* <Route path='/contact' Component={Teams} /> */}
           {/* <Route path='/gallery' Component={Gallery} /> */}
         </Routes>
