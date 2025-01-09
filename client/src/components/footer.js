@@ -9,7 +9,7 @@ import enactusLogo from '../assets/enactusNavbarLogo.png';
 const Footer = () => {
   return (
     <>
-      <footer id="contact-us" className="font-montserrat mt-[80px] bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 animate-gradient bg-300% py-10 md:py-16 rounded-t-[120px]">
+      <footer id="contact-us" className="font-montserrat mt-[80px] bg-blue-400 py-10 md:py-16 rounded-t-[100px]">
         <div className="container mx-auto md:flex md:flex-col md:justify-center">
           <div className="flex justify-center">
             <h1 className="text-4xl md:text-5xl font-bold text-black-500">CONTACT US</h1>
@@ -22,26 +22,26 @@ const Footer = () => {
                 alt="Enactus Logo"
                 className="w-48 md:w-64 mx-auto"
               />
-              <p className="text-lg md:text-xl font-medium text-black mx-auto">
+              <p className="text-lg md:text-xl font-semibold text-black mx-auto">
                 Follow us on social media{' '}
                 <span className="md:hidden">We need your support!</span>
               </p>
               <div className="flex gap-4 md:gap-7 text-base md:text-lg text-[#646464] justify-center md:items-center mx-auto mt-4">
                 <a
                   href="https://www.facebook.com/enactusmnnit/"
-                  className="text-2xl bg-[#efefef] p-2 rounded-full hover:bg-[#f4e25c] hover:text-white transition-all duration-300"
+                  className="text-2xl bg-[#efefef] p-2 rounded-full hover:text-3xl hover:bg-black hover:text-white transition-all duration-300"
                 >
-                  <FaFacebookF />
+                  <FaFacebookF  />
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UCA4d5xXy13G5iOslOG6AjXA"
-                  className="text-2xl bg-[#efefef] p-2 rounded-full hover:bg-[#f4e25c] hover:text-white transition-all duration-300"
+                  className="text-2xl bg-[#efefef] p-2 rounded-full hover:text-3xl hover:bg-black hover:text-white transition-all duration-300"
                 >
                   <AiFillYoutube />
                 </a>
                 <a
                   href="https://www.instagram.com/enactus_mnnit/"
-                  className="text-2xl bg-[#efefef] p-2 rounded-full hover:bg-[#f4e25c] hover:text-white transition-all duration-300"
+                  className="text-2xl bg-[#efefef] p-2 rounded-full hover:text-3xl hover:bg-black hover:text-white transition-all duration-300"
                 >
                   <FaInstagram />
                 </a>
