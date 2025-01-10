@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import TextWrapper from './textWrapper';
+import Footer from '../footer';
 
 const AboutUsPage = () => {
 
@@ -58,6 +59,7 @@ const AboutUsPage = () => {
           
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

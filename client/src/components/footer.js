@@ -19,15 +19,17 @@ function Footer() {
   };
 
   return (
-    <footer className="relative bg-blueGray-200 pt-8 bg-black opacity-75 text-white">
+    <footer className="relative font-montserrat bg-blueGray-200 mt-[40px] rounded-t-[20px] pt-8 pb-4 bg-black opacity-85 text-white ">
       <div className="container mx-auto px-4">
 
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
 
-            <h4 className="text-3xl font-semibold text-blueGray-700">
-              Let's keep in touch!
-            </h4>
+            <img
+              src={enactusLogo}
+              alt="Enactus Logo"
+              className="w-36 md:w-44 justify-left"
+            />
             <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
               Don't limit your challenges, challenge your limit.
             </h5>
@@ -74,13 +76,14 @@ function Footer() {
 
           <div className="w-full lg:w-6/12 ">
             <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-6/12 px-4 ml-auto">
 
-                <h3 className="text-2xl mb-6 font-bold text-black-500">CONTACT US</h3>
+              <div className="w-full lg:w-4/12 px-4 ml-auto">
 
-                <ul className="list-styled text-xs">
+                <h3 className="text-2xl mb-6 font-bold text-blue-500 hover:text-yellow-500 hover:scale-105 transition-transform">CONTACT US</h3>
+
+                <ul className="list-styled text-xs ">
                   <li>
-                    <p class="flex items-center gap-2 justify-left m-2" >
+                    <p class="flex items-center gap-2 justify-left m-2 font-sans hover:font-serif" >
                       <SlLocationPin className="mt-1 text-sm" />
                       Motilal Nehru National Institute of Technology
                       <br />
@@ -102,15 +105,24 @@ function Footer() {
                 </ul>
               </div>
 
-              <div className="w-full lg:w-6/12 ">
-                <img
-                  src={enactusLogo}
-                  alt="Enactus Logo"
-                  className="w-36 md:w-44 justify-left mx-auto"
-                />
-                <ul className="list-styled text-xs p-2">
+              <div className="w-full lg:w-4/12 ">
+                <ul className="list-styled text-xs p-2 pt-12">
                   <li>
-                    <p className="m-2" > <span style={{ color: "yellow" }} >En</span>trepreneurial - igniting business innovation with integrity and passion.</p>
+                    <p className="m-2 " > Terms & Conditions</p>
+                  </li>
+                  <li>
+                    <p className="m-2"> Privacy Policy</p>
+                  </li>
+                  <li>
+                    <p className="m-2"> MIT License </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="w-full lg:w-4/12 ">
+                <ul className="list-styled text-xs p-2 ">
+                  <li>
+                    <p className="m-2 " > <span style={{ color: "yellow" }} >En</span>trepreneurial - igniting business innovation with integrity and passion.</p>
                   </li>
                   <li>
                     <p className="m-2"> <span style={{ color: "yellow" }} >Act</span>ion - the experience of social impact that sparks social enterprise.</p>
@@ -129,7 +141,7 @@ function Footer() {
         <button className="scroll-to-top text-4xl text-red-600 hover:text-blue-400 bg-black-400 fixed"
           style={{
             bottom: "20px", /* Distance from the bottom of the viewport */
-            left: "20px", /* Distance from the right of the viewport */
+            right: "20px", /* Distance from the right of the viewport */
           }}
           onClick={scrollToTop} >
           <BsArrowUpCircleFill />
@@ -138,7 +150,7 @@ function Footer() {
         <div className="flex flex-wrap items-center bg-black md:justify-between justify-center">
           <div className="w-full md:w-4/12 mx-auto text-center">
 
-            <div className="text-sm text-blueGray-500 font-semibold py-1">
+            <div className="text-sm text-blueGray-500 font-semibold py-4">
               <span > © Enactus MNNIT-Allahabad 2k25 </span>
             </div>
 
