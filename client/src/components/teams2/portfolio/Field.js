@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Template from '../Template';
-import Department from './Department';
+import Department from '../Department';
 import { Users, UserCheck } from 'lucide-react';
 
 const Field = () => {
@@ -27,7 +27,7 @@ const Field = () => {
       variants={containerVariants}
       className="min-h-screen bg-zinc-50"
     >
-      <Department tag="FIELD OFFICER" />
+      <Department tag="FIELD OFFICER" des="On-ground heroes bringing our vision to life"/>
       
       <div className="container mx-auto px-4 py-12">
         {/* Toggle Section */}

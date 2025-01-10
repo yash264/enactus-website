@@ -69,11 +69,11 @@ const DepartmentCard = ({ title, path, image, icon: Icon, description }) => {
       
       <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
         <div className="mb-2 flex items-center gap-2">
-          <Icon className="h-5 w-5 text-yellow-600" />
-          <p className="text-sm font-medium text-yellow-600">{description}</p>
+          <Icon className="h-5 w-5 text-yellow-400" />
+          <p className="text-sm font-medium text-yellow-400">{description}</p>
         </div>
         
-        <h2 className="text-xl font-bold tracking-tight">
+        <h2 className="text-2xl font-bold tracking-tight">
           {title}
         </h2>
         

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Template from '../Template';
-import Department from './Department';
+import Department from '../Department';
 import { Users, UserCheck } from 'lucide-react';
 
 const Web = () => {
@@ -27,7 +27,7 @@ const Web = () => {
       variants={containerVariants}
       className="min-h-screen bg-zinc-50"
     >
-      <Department tag="WEB TEAM" />
+      <Department tag="WEB TEAM" des="Meet the architects of our digital journey" />
       
       <div className="container mx-auto px-4 py-12">
         {/* Toggle Section */}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Template from '../Template';
-import Department from './Department';
+import Department from '../Department';
 import { Users, UserCheck } from 'lucide-react';
 
 const Reserach = () => {
@@ -27,7 +27,7 @@ const Reserach = () => {
       variants={containerVariants}
       className="min-h-screen bg-zinc-50"
     >
-      <Department tag="RESEARCH AND DEVELOPMENT TEAM" />
+      <Department tag="RESEARCH AND DEVELOPMENT TEAM" des="Innovators pushing boundaries and driving progress" />
       
       <div className="container mx-auto px-4 py-6">
         {/* Toggle Section */}
