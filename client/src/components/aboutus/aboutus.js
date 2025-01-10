@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import TextWrapper from './textWrapper';
 
 const AboutUsPage = () => {
@@ -15,8 +16,22 @@ const AboutUsPage = () => {
     //width: "100%", 
   };
 
+  const navigate = useNavigate()
+
+  const goBack = () => {
+    navigate("/")
+  }
+
   return (
     <div className="relative" >
+      <div className="absolute top-2 left-8 z-10">
+        <button
+          onClick={goBack}
+          className="bg-black text-white px-4 py-2 rounded-md opacity-80 hover:opacity-100 transition-opacity duration-300"
+        >
+          Back
+        </button>
+      </div>
       <div className="text-center my-6 px-4">
         <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-black tracking-tight mb-2">
           Know About Us !!

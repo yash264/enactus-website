@@ -5,6 +5,10 @@ const TextWrapper = () => {
         <div className="mt-8 md:mt-0 "> {/* Add margin-top for smaller screens */}
             <div className="text-base col-lg-7 bg-white p-6 rounded-xl shadow-lg">
 
+                <p className="text-3xl md:text-3xl text-zinc-700 font-semibold text-blue-400">
+                    Who are We ?
+                </p>
+
                 <p className="mt-3">Enactus <b>Allahabad</b>, established in _____, is an organization, consisting of a group of dedicated and driven students who share the mutual aim of creating a better and more sustainable world and seek to uplift the communities through entrepreneurial action.</p>
 
                 <p className="mt-3">Since its inception, Enactus Allahabad has seeked to bring formidable changes in the society and has worked on the following projects: <b>Neer, Samvesh, Moonj and Sahyog</b>. Our initiatives have the enabled the betterment of thousands of lives and created 182 entrepreneurs through sustainable business models.</p>
@@ -14,7 +18,7 @@ const TextWrapper = () => {
                 </p>
 
                 <h3 className="title mt-4 font-bold italic text-gray-600">"For the community, by the community."</h3>
-            
+
             </div>
         </div>
     );
