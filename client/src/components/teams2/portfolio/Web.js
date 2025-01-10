@@ -1,49 +1,99 @@
-import React, { useState, useRef } from 'react'
-import Template from './Template'
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Template from '../Template';
 import Department from './Department';
+import { Users, UserCheck } from 'lucide-react';
 
 const Web = () => {
+  const [showPresent, setShowPresent] = useState(true);
 
-  const [val, setVal] = useState(true);
-  const btnRef1 = useRef()
-  const btnRef2 = useRef()
-
-  const handlePresentClick = () => {
-    setVal(true);
-    btnRef1.current.style.backgroundColor = "#153462";
-    btnRef1.current.style.color = "white";
-    btnRef2.current.style.backgroundColor = "white";
-    btnRef2.current.style.color = "black";
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { 
+        duration: 0.6,
+        when: "beforeChildren",
+        staggerChildren: 0.2
+      }
+    }
   };
-
-  const handleAlumniClick = () => {
-    setVal(false);
-    btnRef1.current.style.backgroundColor = "white";
-    btnRef1.current.style.color = "black";
-    btnRef2.current.style.backgroundColor = "#153462";
-    btnRef2.current.style.color = "white";
-  };
-
 
   return (
-    <div>
+    <motion.div 
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+      className="min-h-screen bg-zinc-50"
+    >
       <Department tag="WEB TEAM" />
-      <div className="btn">
-        <div className='flex mt-6  justify-end'>
+      
+      <div className="container mx-auto px-4 py-12">
+        {/* Toggle Section */}
+        <motion.div 
+          className="flex justify-center mb-16"
+          variants={containerVariants}
+        >
+          <div className="bg-white p-2 rounded-2xl shadow-lg inline-flex gap-2">
+            <button
+              onClick={() => setShowPresent(true)}
+              className={`
+                flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-sm
+                transition-all duration-300 
+                ${showPresent 
+                  ? 'bg-yellow-500 text-black shadow-lg scale-105' 
+                  : 'text-zinc-500 hover:text-zinc-700 hover:bg-zinc-100'
+                }
+              `}
+            >
+              <Users className="w-4 h-4" />
+              Present Team
+            </button>
+            <button
+              onClick={() => setShowPresent(false)}
+              className={`
+                flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-sm
+                transition-all duration-300
+                ${!showPresent 
+                  ? 'bg-yellow-500 text-black shadow-lg scale-105' 
+                  : 'text-zinc-500 hover:text-zinc-700 hover:bg-zinc-100'
+                }
+              `}
+            >
+              <UserCheck className="w-4 h-4" />
+              Alumni
+            </button>
+          </div>
+        </motion.div>
 
-          <button ref={btnRef1} className=" py-2 px-3 m-2 mr-4 flex rounded-xl font-bold  tracking-wider cursor-pointer border border-solid hover:shadow-2xl hover:bg-[#BAD1C2] hover:border-2  border-black p-4 text-white bg-[#153462] hover:text-black " onClick={() => handlePresentClick()}>Present</button>
-          <button ref={btnRef2} className=" py-2 px-3 m-2 mr-4 flex rounded-xl font-bold  border border-solid border-black p-4 tracking-wider cursor-pointer hover:border-2 hover:shadow-2xl hover:bg-[#BAD1C2] hover:text-black" onClick={() => handleAlumniClick()} >Alumni</button>
-
-        </div>
+        {/* Team Members Section */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={showPresent ? 'present' : 'alumni'}
+            initial={{ opacity: 0, x: showPresent ? 100 : -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: showPresent ? -100 : 100 }}
+            transition={{ duration: 0.5 }}
+          >
+            {showPresent ? (
+              <Template
+                name={["Shruti Mayank", "Himanshu Tripathi", "Shaurya Raj Srivastava", "Aniket Shah"]}
+                yr={["2024", "2024", "2024", "2024"]}
+                url={["/", "/", "/", "/"]}
+              />
+            ) : (
+              <Template
+                name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]}
+                yr={["2019", "2021", "2009", "2022"]}
+                url={["/", "/", "/", "/"]}
+              />
+            )}
+          </motion.div>
+        </AnimatePresence>
       </div>
+    </motion.div>
+  );
+};
 
-      {(val === true) ? (
-        <Template name={["Shruti Mayank","Himanshu Tripathi", "Shaurya Raj Srivastava","Aniket Shah"]} yr={["2024", "2024", "2024", "2024", "2024"]} url={["/", "/", "/", "/", "/"]} />
-      ) : (
-        <Template name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]} yr={["2019", "2021", "2009", "2022"]} url={["/", "/", "/", "/", "/"]}/>
-      )}
-    </div>
-  )
-}
-
-export default Web
+export default Web;
