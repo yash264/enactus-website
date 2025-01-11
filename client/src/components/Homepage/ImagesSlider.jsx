@@ -39,7 +39,7 @@ const ImagesSlider = ({
           img.onload = () => resolve(image);
           img.onerror = reject;
         });
-      });
+      }, [handleNext, handlePrevious]);
 
       Promise.all(loadPromises)
         .then((loadedImages) => {
@@ -50,7 +50,7 @@ const ImagesSlider = ({
     };
 
     loadImages();
-  }, [images]);
+  }, [images],[handleNext], [handlePrevious]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -74,7 +74,7 @@ const ImagesSlider = ({
       window.removeEventListener("keydown", handleKeyDown);
       clearInterval(interval);
     };
-  }, [autoplay]);
+  }, [autoplay],[handleNext], [handlePrevious]);
 
   const slideVariants = {
     initial: { scale: 0, opacity: 0, rotateX: 45 },

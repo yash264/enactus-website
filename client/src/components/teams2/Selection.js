@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Code, Pencil, Users, Megaphone, UserCog } from 'lucide-react';
+import { Code, Pencil, Users, Megaphone } from 'lucide-react';
 import Reserach from './photos/section/research.webp'
 import Design from './photos/section/DESIGN.jpg'
 import Sponsorship from './photos/section/SPONSORSHIP.jpg'

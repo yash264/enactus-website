@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import enactusNavbarLogo from '../../assets/enactusNavbarLogo.png';
+import enactusNavbarLogo from '../assets/enactusNavbarLogo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,6 @@ const Navbar = () => {
     { name: 'Home', link: '/' },
     { name: 'About Us', link: '/about' },
     { name: 'Projects', link: '/project' },
-    { name: 'Gallery', link: '/gallery' },
     { name: 'Team', link: '/team' },
     { name: 'ContactUs', link: '/contact-us' },
     { name: 'E Cart', link: '/ecart' },
