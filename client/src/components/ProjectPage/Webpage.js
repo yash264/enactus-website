@@ -4,8 +4,8 @@ import Title from "./Title";
 
 const Webpage = ({ Project }) => {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-t from-gray-100 via-white to-gray-200">
-      <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 text-white py-8 md:py-12 px-2 md:px-8">
+    <div className="min-h-screen flex flex-col bg-background">
+      <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 md:mt-6 text-white py-1 md:py-2 px-2 md:px-8">
         <div className="max-w-8xl mx-auto">
           <Title title={Project} />
         </div>
