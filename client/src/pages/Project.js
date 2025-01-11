@@ -7,7 +7,7 @@ import neerImage from '../assets/projects/images/neer.jpg';
 import moonjImage from '../assets/projects/images/moonj.jpg';
 import sahyogImage from '../assets/projects/images/sahyog.jpg';
 
-const Projects = () => {
+const Project = () => {
   const [activeProject, setActiveProject] = useState('');
   const [visible, setInvisible] = useState(true);
 
@@ -89,4 +89,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;

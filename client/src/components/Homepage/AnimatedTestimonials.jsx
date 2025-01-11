@@ -2,7 +2,6 @@
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
-//import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
@@ -23,7 +22,7 @@ const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
+  }, [autoplay],[handleNext]);
 
   const randomRotateY = () => Math.floor(Math.random() * 21) - 10;
 

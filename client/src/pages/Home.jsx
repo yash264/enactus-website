@@ -1,4 +1,4 @@
-import ImagesSlider from "../components/Homepage/ImagesSlider";
+import ImagesSlider from "../components/Homepage/ImagesSlider.jsx";
 //import TeamCard from "../components/Homepage/TeamCard";
 import  AnimatedTestimonials from "../components/Homepage/AnimatedTestimonials.jsx";
 
@@ -29,7 +29,7 @@ const testimonials = [
   }
 ];
 
-const HomePage = () => (
+const Home = () => (
   <div >
     <ImagesSlider images={images} autoplay={true} direction="up" className="h-[500px] w-full " >
       <h1
@@ -46,4 +46,4 @@ const HomePage = () => (
   </div>
 );
 
-export default HomePage;
+export default Home;
