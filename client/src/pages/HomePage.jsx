@@ -5,7 +5,6 @@ import  AnimatedTestimonials from "../components/Homepage/AnimatedTestimonials.j
 import img1 from "../images/portfolio-1.jpg";
 import img2 from "../images/portfolio-2.jpg";
 import img3 from "../images/portfolio-3.jpg";
-import Footer from "../components/footer.js";
 
 const images = [img1, img2, img3];
 
@@ -31,8 +30,8 @@ const testimonials = [
 ];
 
 const HomePage = () => (
-  <div className="h-[500px] w-full ">
-    <ImagesSlider images={images} autoplay={true} direction="up">
+  <div >
+    <ImagesSlider images={images} autoplay={true} direction="up" className="h-[500px] w-full " >
       <h1
         className="absolute z-50 text-white px-6 py-2 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300"
         onClick={() => (window.location.href = "/about")}
@@ -44,7 +43,6 @@ const HomePage = () => (
     <div className="mt-16 mb-20 px-2 py-2">
       <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
     </div>
-    <Footer id="contact-us" />
   </div>
 );
 
