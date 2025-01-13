@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IoArrowBack } from 'react-icons/io5'; // Icon for Back Button
-import Webpage from '../components/ProjectPage/Webpage';
+import Webpage from '../components/Projects/Webpage';
 
 import samveshImage from '../assets/projects/images/samvesh.jpg';
 import neerImage from '../assets/projects/images/neer.jpg';

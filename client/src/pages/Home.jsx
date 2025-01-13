@@ -1,13 +1,13 @@
-import ImagesSlider from "../components/Homepage/ImagesSlider";
+import ImagesSlider from "../components/Home/ImagesSlider.jsx";
 //import TeamCard from "../components/Homepage/TeamCard";
-import  AnimatedTestimonials from "../components/Homepage/AnimatedTestimonials.jsx";
+import  AnimatedTestimonials from "../components/Home/AnimatedTestimonials.jsx";
 import React from "react";
-import HeroParallax, { Header } from "../components/Homepage/AnimateSlider.jsx";
+import HeroParallax, { Header } from "../components/Home/AnimateSlider.jsx";
 
-import img1 from "../images/portfolio-1.jpg";
-import img2 from "../images/portfolio-2.jpg";
-import img3 from "../images/portfolio-3.jpg";
-import News from "../components/Homepage/News.jsx";
+import img1 from "../assets/Home/portfolio-1.jpg";
+import img2 from "../assets/Home/portfolio-2.jpg";
+import img3 from "../assets/Home/portfolio-3.jpg";
+import News from "../components/Home/News.jsx";
 
 const images = [img1, img2, img3];
 

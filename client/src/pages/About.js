@@ -1,5 +1,5 @@
 import React from 'react';
-import TextWrapper from '../components/TextWrapper';
+import TextWrapper from '../components/About/TextWrapper';
 const AboutUs = () => {
 
   // https://www.enactusaustralia.org.au/wp-content/uploads/2023/08/SDG-Enactus-687x686-dcbade2.png
