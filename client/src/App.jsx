@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='bg-background' style={{ paddingTop: '95px' }}> {/* Adjust the value according to your navbar height */}
+      <div className='bg-background' style={{ paddingTop: '60px' }}> {/* Adjust the value according to your navbar height */}
         {location.pathname === '/' && <Home />}
         <Routes>
           {/* <Route path='/blog' Component={Carousel} /> */}

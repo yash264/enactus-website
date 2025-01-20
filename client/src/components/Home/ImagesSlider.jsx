@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "../../lib/utils"; // Ensure `cn` utility is defined or replace with your preferred class name utility.
+import { cn } from "../../lib/utils"; 
 
 const ImagesSlider = ({
   images,
@@ -106,6 +106,7 @@ const ImagesSlider = ({
       )}
       style={{ perspective: "1000px" }}
     >
+      {loading && <div className="loading-indicator">Loading...</div>}
       {areImagesLoaded && children}
       {areImagesLoaded && overlay && (
         <div className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)} />
