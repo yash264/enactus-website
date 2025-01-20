@@ -84,7 +84,7 @@ function Footer() {
                   <ul className="list-styled text-xs ">
                     <li>
                       <p class="flex items-center gap-2 justify-left m-2 font-sans hover:font-serif" >
-                        <SlLocationPin className="mt-1 text-sm" />
+                        <SlLocationPin className="mt-1 text-xl" />
                         Motilal Nehru National Institute of Technology
                         <br />
                         Teliarganj, Allahabad

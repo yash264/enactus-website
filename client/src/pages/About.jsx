@@ -1,8 +1,7 @@
 import React from 'react';
 import TextWrapper from '../components/About/TextWrapper';
-const AboutUs = () => {
 
-  // https://www.enactusaustralia.org.au/wp-content/uploads/2023/08/SDG-Enactus-687x686-dcbade2.png
+const AboutUs = () => {
 
   const backgroundStyle = {
     backgroundImage: "url('https://www.enactusaustralia.org.au/wp-content/uploads/2023/08/SDG-Enactus-687x686-dcbade2.png')",
@@ -10,17 +9,15 @@ const AboutUs = () => {
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundAttachment: "fixed",
-    //height: "100%", 
-    //width: "100%", 
   };
 
   return (
     <div className="relative" >
     
       <div className="text-center my-6 px-4">
-        <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-black tracking-tight mb-2">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-black tracking-tight mb-3">
           Know About Us !!
-        </h2>
+        </h1>
         <p className="text-xl md:text-base text-zinc-700 italic">
           A little more about Enactus Allahabad
         </p>

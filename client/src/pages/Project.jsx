@@ -50,7 +50,7 @@ const Project = () => {
           <h1 className="text-4xl sm:text-5xl font-extrabold text-black tracking-tight mb-3">
             Explore Our Projects
           </h1>
-          <p className="text-sm sm:text-md md:text-lg text-zinc-700 font-medium">
+          <p className="text-xl md:text-base text-zinc-700 italic">
             Dive into some of the impactful projects our team has worked on.
           </p>
         </div>

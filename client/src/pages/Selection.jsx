@@ -88,10 +88,10 @@ const Selection = () => {
     <div className="min-h-screen bg-zinc-50 py-12">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
-          <h1 className="text-6xl font-bold text-zinc-800 mb-4">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-black tracking-tight mb-3">
             Our Departments
           </h1>
-          <p className="text-zinc-600 max-w-2xl mx-auto text-3xl">
+          <p className="text-xl md:text-base text-zinc-700 italic">
             Explore our specialized teams working together to drive innovation and excellence
           </p>
         </div>
