@@ -30,12 +30,12 @@ const Project = () => {
   const projects = ['samvesh', 'neer', 'moonj', 'sahyog'];
 
   return (
-    <div className="relative min-h-screen bg-background overflow-hidden">
+    <div className="relative min-h-screen bg-background overflow-hidden pt-6 md:pt-16 lg:pt-20">
       {/* Back Icon (Only Visible on Single Project View) */}
       <div className="absolute md:mt-6 -mt-2 top-6 left-4 z-20">
         <button
           onClick={goBack}
-          className={`flex items-center justify-center w-12 h-12 text-white rounded-full shadow-md transition-opacity duration-300 ${
+          className={`flex items-center justify-center w-12 h-12 text-zinc-900 border-[1px] border-zinc-950 rounded-full shadow-md transition-opacity duration-300 ${
             visible ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
           aria-label="Go Back"
@@ -46,7 +46,7 @@ const Project = () => {
 
       {/* Explore Section with Smaller Heading */}
       {visible && (
-        <div className="text-center my-8 px-4">
+        <div className="text-center px-4">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-black tracking-tight mb-3">
             Explore Our Projects
           </h1>

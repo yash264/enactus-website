@@ -1,11 +1,30 @@
 import React from "react";
 import Description from "./Descriptions/Description";
 import Title from "./Title";
+import samveshImage from '../../assets/projects/images/samvesh.jpg';
+import neerImage from '../../assets/projects/images/neer.jpg';
+import moonjImage from '../../assets/projects/images/moonj.jpg';
+import sahyogImage from '../../assets/projects/images/sahyog.jpg';
 
 const Webpage = ({ Project }) => {
+  const getImage = (projectName) => {
+    switch (projectName) {
+      case 'samvesh':
+        return samveshImage;
+      case 'neer':
+        return neerImage;
+      case 'moonj':
+        return moonjImage;
+      case 'sahyog':
+        return sahyogImage;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 md:mt-6 text-white py-1 md:py-2 px-2 md:px-8">
+      <div className=" md:mt-6 text-zinc-900 py-1 md:py-2 px-2 md:px-8">
         <div className="max-w-8xl mx-auto">
           <Title title={Project} />
         </div>
@@ -17,7 +36,7 @@ const Webpage = ({ Project }) => {
             className="w-full md:w-3/4 h-80 md:h-[400px] bg-zinc-800 rounded-lg flex items-center justify-center 
             text-white text-3xl font-semibold"
           >
-            Image Placeholder
+            <img src={getImage(Project)} alt={Project} className="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
 
