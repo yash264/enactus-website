@@ -38,8 +38,8 @@ const products = [
   },
   {
     id: 4,
-    name: "Bulb-Shaped Basket ",
-    price: 350 ,
+    name: "Bulb-Shaped Basket and Small Carry Basket",
+    price: 350+250 ,
     rating: 4.4,
     image: asset.en4,
     description: "Beautifully hand-painted earthen clay water bottles, combining traditional craftsmanship with vibrant designs for eco-friendly and stylish hydration."
