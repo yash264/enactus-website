@@ -4,6 +4,7 @@ import { Search, ShoppingCart } from "lucide-react";
 import { HiTrash } from "react-icons/hi";
 import { HiOutlineX } from "react-icons/hi";
 
+
 const products = [
   {
     id: 1,
@@ -52,7 +53,33 @@ const products = [
     rating: 4.4,
     image: "https://www.shutterstock.com/image-photo/beautiful-painted-colorful-terracotta-pots-260nw-1883422537.jpg",
     description: "Control your smart home devices with this central hub"
+  },
+  {
+    id: 7,
+    name: "Decorative Handwoven Basket",
+    price: 300,
+    rating: 4.4,
+    image: "https://www.shutterstock.com/image-photo/beautiful-painted-colorful-terracotta-pots-260nw-1883422537.jpg",
+    description: "A stylish Moonj grass basket with an intricate floral handle design, perfect for serving or décor"
+  },
+   
+  {
+    id: 8,
+    name: "Hand-Knitted Sweater",
+    price: 900,
+    rating: 4.4,
+    image: "https://www.shutterstock.com/image-photo/beautiful-painted-colorful-terracotta-pots-260nw-1883422537.jpg",
+    description: "A vibrant green, hand-knitted sweater featuring intricate patterns and buttons, perfect for cozy winter wear."
+  },
+  {
+    id: 9,
+    name: "Earthen clay water bottle",
+    price: 450 ,
+    rating: 4.4,
+    image: "https://www.shutterstock.com/image-photo/beautiful-painted-colorful-terracotta-pots-260nw-1883422537.jpg",
+    description: "Beautifully hand-painted earthen clay water bottles, combining traditional craftsmanship with vibrant designs for eco-friendly and stylish hydration."
   }
+
 ];
 
 const ProductCard = ({ product, addCart }) => {
