@@ -6,6 +6,9 @@ import en5 from './en5.png'
 import en6 from './en6.png'
 import en7 from './en7.png'
 import en8 from './en8.png'
+import roysha from './roysha.jpeg'
+import shreyansh from './shreyansh.jpeg'
+import utkarsh from './utkarsh.jpeg'
 
 export const asset = {
     en1,
@@ -16,5 +19,8 @@ export const asset = {
     en6,
     en7,
     en8,
+    roysha,
+    shreyansh,
+    utkarsh
 
 }

@@ -5,6 +5,13 @@ import { HiTrash } from "react-icons/hi";
 import { HiOutlineX } from "react-icons/hi";
 
 import {asset} from '../images/asset.js'
+import { ToastContainer, toast } from 'react-toastify';
+
+
+
+
+
+
 
  
 
@@ -79,6 +86,16 @@ const products = [
 ];
 
 const ProductCard = ({ product, addCart }) => {
+  const handleClick = () => {
+    toast.info("Currently not available. We will reach out to you soon!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  }
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -107,17 +124,28 @@ const ProductCard = ({ product, addCart }) => {
 
         <button
           className="w-full py-2 px-4 bg-zinc-100 rounded-xl text-zinc-700 font-medium flex items-center justify-center gap-2 hover:bg-yellow-600 hover:text-white transition-colors duration-300"
-          onClick={() => addCart(product)}
+          onClick={handleClick} //onClick={() => addCart(product)}
         >
           <ShoppingCart className="w-4 h-4" />
           Add to Cart
         </button>
+        <ToastContainer />
       </div>
     </motion.div>
   );
 };
 
 const ECart = () => {
+  const handleClick = () => {
+    toast.info("Currently not available. We will reach out to you soon!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  }
   const [cartItem, setCartItem] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -265,7 +293,7 @@ const ECart = () => {
                       <div>
                         <p className="font-medium text-zinc-800">{item.name}</p>
                         <p className="text-sm text-zinc-600">
-                          {item.quantity} x ${item.price}
+                          {item.quantity} x ₹{item.price}
                         </p>
                       </div>
                       <div className="flex items-center gap-2">
@@ -297,11 +325,12 @@ const ECart = () => {
 
               <div className="border-t pt-4 mt-4">
                 <p className="text-lg font-bold text-zinc-800">
-                  Total: ${total.toFixed(2)}
+                  Total: ₹{total.toFixed(2)}
                 </p>
-                <button className="w-full bg-yellow-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-yellow-700 transition">
+                <button onClick={handleClick} className="w-full bg-yellow-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-yellow-700 transition">
                   Proceed to Checkout
                 </button>
+                <ToastContainer />
               </div>
             </motion.div>
           )}
