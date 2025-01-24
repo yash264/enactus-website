@@ -45,9 +45,10 @@ const HomePage = () => {
         <AnimatedTestimonials autoplay={true} />
       </div> */}
 
-      <div>
+      {/*<div>
         <News />
-      </div>
+      </div>*/}
+      
     </div>
   );
 };
