@@ -13,6 +13,8 @@ import img1 from "../../assets/Teams/TeamMembers/Amartya Mani.jpeg";
 import img2 from "../../assets/Teams/TeamMembers/Amartya Mani.jpeg";
 import img3 from "../../assets/Teams/TeamMembers/Amartya Mani.jpeg";
 import { asset } from "../../images/asset.js";
+import { Link } from "react-router-dom";
+
 
 export function Details() {
   return (
@@ -152,10 +154,12 @@ const SkeletonFour = () => {
           className="sm:text-sm text-xs text-center font-semibold text-gray-700 mt-4">
           Utkarsh Sharma
         </p>
-        <p
-          className="border border-red-500 bg-red-100 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Meet our team
-        </p>
+        <Link to="/team">
+          <p
+            className="border border-red-500 bg-red-100 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
+            Meet our team
+          </p>
+        </Link>
       </motion.div>
       <motion.div
         className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 border border-gray-300 flex flex-col items-center justify-center">
@@ -169,10 +173,14 @@ const SkeletonFour = () => {
           className="sm:text-sm text-xs text-center font-semibold text-gray-700 mt-4">
           Aditya Roysha
         </p>
-        <p
-          className="border border-green-500 bg-green-100 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Meet our team
-        </p>
+        <Link to="/teams">
+
+
+          <p
+            className="border border-green-500 bg-green-100 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
+            Meet our team
+          </p>
+        </Link>
       </motion.div>
       <motion.div
         variants={second}
@@ -187,10 +195,14 @@ const SkeletonFour = () => {
           className="sm:text-sm text-xs text-center font-semibold text-gray-700 mt-4">
           Shreyansh Singh
         </p>
-        <p
-          className="border border-orange-500 bg-orange-100 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Meet our team
-        </p>
+        <Link to="/teams">
+
+
+          <p
+            className="border border-orange-500 bg-orange-100 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
+            Meet our team
+          </p>
+        </Link>
       </motion.div>
     </motion.div>)
   );
