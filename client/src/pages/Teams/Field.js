@@ -78,15 +78,17 @@ const Field = () => {
           >
             {showPresent ? (
               <Template
-                name={["Shruti Mayank", "Himanshu Tripathi", "Shaurya Raj Srivastava", "Aniket Shah"]}
-                yr={["2024", "2024", "2024", "2024"]}
-                url={["/", "/", "/", "/"]}
+                name={["Aditya Roysha","Jatin Chaudhary", "Iqra Abbasi", "Sattwik Jana", "Anant Pandey","Divya Mohan Kalhans","Mitali Srivastava"]}
+                yr={["2025","2026", "2026", "2026", "2026","2026","2026"]}
+                url={["https://www.linkedin.com/in/adiroy05/","https://www.linkedin.com/in/jatinchaudhary20", "https://www.linkedin.com/in/iqra-abbasi-8a058926a", "http://linkedin.com/in/sattwik-jana", "http://www.linkedin.com/in/anant-pandey-80991b254","https://www.linkedin.com/in/divya-mohan-kalhans-15bb3824b","https://www.linkedin.com/in/mitali-srivastava-23240104omom/"]}
+                email={["/","chaudharyjatin205@gmail.com", "abbasiiqra44@gmail.com", "sattwikjana77@gmail.com", "anantpandey175@gmail.com","dm.kalhans@gmail.com","mitalisrivastava01012020@gmail.com"]}
               />
             ) : (
               <Template
                 name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]}
                 yr={["2019", "2021", "2009", "2022"]}
                 url={["/", "/", "/", "/"]}
+                email={["/", "/", "/", "/"]}
               />
             )}
           </motion.div>

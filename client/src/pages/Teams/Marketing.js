@@ -78,15 +78,17 @@ const Marketing = () => {
           >
             {showPresent ? (
               <Template
-                name={["Shruti Mayank", "Himanshu Tripathi", "Shaurya Raj Srivastava", "Aniket Shah"]}
-                yr={["2024", "2024", "2024", "2024"]}
-                url={["/", "/", "/", "/"]}
+                name={["Humanshi Singh", "Shaghil Jawed", "Navya Srivastava", "Ujjwal Gupta"]}
+                yr={["2026", "2026", "2026", "2026"]}
+                url={["https://www.linkedin.com/in/humanshi-singh03/", "https://www.linkedin.com/in/shaghil-jawed-68989919b", "https://www.linkedin.com/in/navya306/", "https://www.linkedin.com/in/ujjwal-gupta25"]}
+                email={["humanshi27@gmail.com", "shaghiljawed76@gmail.com", "navyasrivastava306@gmail.com", "guptaujjwal2509@gmail.com"]}
               />
             ) : (
               <Template
                 name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]}
                 yr={["2019", "2021", "2009", "2022"]}
                 url={["/", "/", "/", "/"]}
+                email={["/", "/", "/", "/"]}
               />
             )}
           </motion.div>

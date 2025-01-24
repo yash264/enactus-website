@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Imagecard from "./Imagecard";
 
-const Template = ({ name, yr, url }) => {
+const Template = ({ name, yr, url,email }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -46,6 +46,7 @@ const Template = ({ name, yr, url }) => {
                 name={memberName}
                 yr={yr[index]}
                 url={url[index]}
+                email={email[index]}
               />
             </motion.div>
           ))}
