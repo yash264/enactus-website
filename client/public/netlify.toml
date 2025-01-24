@@ -1,0 +1,4 @@
+[[redirects]]
+    from = "/*"                   # Redirect all requests
+    to = "/index.html"            # Serve the React app for all routes
+    status = 200   
