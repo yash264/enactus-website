@@ -78,15 +78,17 @@ const Reserach = () => {
           >
             {showPresent ? (
               <Template
-                name={["Shruti Mayank", "Himanshu Tripathi", "Shaurya Raj Srivastava", "Aniket Shah"]}
-                yr={["2024", "2024", "2024", "2024"]}
-                url={["/", "/", "/", "/"]}
+                name={["Nishan Raj Regmi", "Ajeet Kumar", "Yashvardhan singh", "Akshat Mahanth","Shreyan Das"]}
+                yr={["2026", "2026", "2026", "2026","2026"]}
+                url={["https://www.linkedin.com/in/nishan-regmi-797a3826a", "https://www.linkedin.com/in/ajeet-kumar-08864a20b", "https://www.linkedin.com/in/yashvardhan-singh-82ab03288", "https://www.linkedin.com/in/akshat-mahanth-b1262924b","https://www.linkedin.com/in/shreyan-das-a99587253/"]}
+                email={["dropmailtonishan@gmail.com", "ajeetkumar555368@gmail.com", "yvardhan0711@gmail.com", "akshatmahantham@gmail.com","shreyan.20226139@mnnit.ac.in"]}
               />
             ) : (
               <Template
                 name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]}
                 yr={["2019", "2021", "2009", "2022"]}
                 url={["/", "/", "/", "/"]}
+                email={["/", "/", "/", "/"]}
               />
             )}
           </motion.div>

@@ -78,15 +78,17 @@ const Design = () => {
           >
             {showPresent ? (
               <Template
-                name={["Shruti Mayank", "Himanshu Tripathi", "Shaurya Raj Srivastava", "Aniket Shah"]}
-                yr={["2024", "2024", "2024", "2024"]}
-                url={["/", "/", "/", "/"]}
+                name={["Sangini baingaha", "Divyanshu Purbey", "Sanya Gupta", "Aparajita Singh"]}
+                yr={["2026", "2026", "2026", "2026"]}
+                url={["https://www.linkedin.com/in/sangini-baingaha-939826257", "https://www.linkedin.com/in/divyanshu-purbey/", "https://www.linkedin.com/in/sanya-gupta-46ab8324b/", "https://www.linkedin.com/in/aparajita-singh-"]}
+                email={["Sanginibaingaha@gmail.com", "divyanshupurbey3006@gmail.com", "sanyagupta2310@gmail.com", "aparajitanegisingh@gmail.com"]}
               />
             ) : (
               <Template
                 name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]}
                 yr={["2019", "2021", "2009", "2022"]}
                 url={["/", "/", "/", "/"]}
+                email={["/", "/", "/", "/"]}
               />
             )}
           </motion.div>
