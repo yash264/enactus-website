@@ -30,6 +30,13 @@ import Member26 from "../../assets/Teams/TeamMembers/MarketingTeam/ShaghilJawed.
 import Member27 from "../../assets/Teams/TeamMembers/MarketingTeam/Navya.jpg";
 import Member28 from "../../assets/Teams/TeamMembers/MarketingTeam/UjjwalGupta.jpg";
 import Member29 from  "../../assets/Teams/TeamMembers/FieldOfficer/Aditya.jpeg";
+import Member30 from "../../assets/Teams/TeamMembers/Shruti Mayank.JPG";
+import Member31 from "../../assets/Teams/TeamMembers/AdyaSharma.jpg";
+import Member32 from "../../assets/Teams/TeamMembers/Ayush Aman.jpeg";
+import Member33 from "../../assets/Teams/TeamMembers/Himanshu Tripathi.jpeg";
+import Member34 from "../../assets/Teams/TeamMembers/GawthamVellore.jpg";
+import Member35 from "../../assets/Teams/TeamMembers/Shaurya Raj Srivastava.jpg";
+import Member36 from "../../assets/Teams/TeamMembers/Aniket Shah.jpg";
 import logo from "../../assets/Teams/TeamMembers/question_mark.jpg"
 const Imagecard = ({ name, yr, url,email }) => {
   let imageSource;
@@ -122,7 +129,27 @@ const Imagecard = ({ name, yr, url,email }) => {
       case 'Aditya Roysha':
       imageSource=Member29;
       break;
-      
+      case 'Shruti Mayank':
+      imageSource = Member30;
+      break;
+    case 'Adya Sharma':
+      imageSource = Member31;
+      break;
+    case 'Ayush Aman':
+      imageSource = Member32;
+      break;
+    case 'Himanshu Tripathi':
+      imageSource = Member33;
+      break;
+    case 'Gawtham Vellore':
+      imageSource = Member34;
+      break;
+      case 'Shaurya Raj Srivastava':
+      imageSource = Member35;
+      break;
+    case 'Aniket Shah':
+      imageSource = Member36;
+      break;
 
       
       
