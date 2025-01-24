@@ -177,11 +177,11 @@ const Imagecard = ({ name, yr, url,email }) => {
         </h3>
         
         <div className="space-y-4">
-          <div className="flex items-center gap-2 text-zinc-600">
+          {/* <div className="flex items-center gap-2 text-zinc-600">
             <Calendar className="w-4 h-4 text-yellow-600" />
             <span className="text-sm">Batch of</span>
             <span className="font-semibold text-yellow-600">{yr}</span>
-          </div>
+          </div> */}
           
           <div className="flex gap-3">
             <a
