@@ -173,7 +173,7 @@ const SkeletonFour = () => {
           className="sm:text-sm text-xs text-center font-semibold text-gray-700 mt-4">
           Aditya Roysha
         </p>
-        <Link to="/teams">
+        <Link to="/team">
 
 
           <p
@@ -195,7 +195,7 @@ const SkeletonFour = () => {
           className="sm:text-sm text-xs text-center font-semibold text-gray-700 mt-4">
           Shreyansh Singh
         </p>
-        <Link to="/teams">
+        <Link to="/team">
 
 
           <p
