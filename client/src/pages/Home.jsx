@@ -7,7 +7,7 @@ import { FlipWords } from "../components/Home/UI/Flip-words.jsx";
 import img1 from "../assets/Home/portfolio-1.jpg";
 import img2 from "../assets/Home/portfolio-2.jpg";
 import img3 from "../assets/Home/portfolio-3.jpg";
-import News from "../components/Home/News.jsx";
+//import News from "../components/Home/News.jsx";
 import { ProjectCarousel } from "../components/Home/ProjectCarousel.jsx";
 import { useNavigate } from "react-router-dom";
 import { Details } from "../components/Home/Details.jsx";
@@ -45,9 +45,9 @@ const HomePage = () => {
         <AnimatedTestimonials autoplay={true} />
       </div> */}
 
-      <div>
+      {/*<div>
         <News />
-      </div>
+      </div>*/}
 
     </div>
   );
