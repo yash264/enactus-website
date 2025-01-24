@@ -95,7 +95,7 @@ function Footer() {
                     <li>
                       <p class="flex items-center gap-2 justify-left m-2 " >
                         <CiPhone className="mt-1" />
-                        +91 8340556926</p>
+                        +91 836 812 8141</p>
                     </li>
                     <li>
                       <p class="flex items-center gap-2 justify-left m-2 " >

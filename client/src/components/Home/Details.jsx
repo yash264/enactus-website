@@ -12,6 +12,7 @@ import { cn } from "../../lib/utils.js";
 import img1 from "../../assets/Teams/TeamMembers/Amartya Mani.jpeg";
 import img2 from "../../assets/Teams/TeamMembers/Amartya Mani.jpeg";
 import img3 from "../../assets/Teams/TeamMembers/Amartya Mani.jpeg";
+import { asset } from "../../images/asset.js";
 
 export function Details() {
   return (
@@ -89,15 +90,8 @@ const SkeletonTwo = () => {
   return (
     (<div className="flex flex-1 w-full h-full min-h-[6rem] bg-gray-100 flex-col space-y-2">
       <div className="flex flex-col items-center justify-center h-full">
-        <h3 className="text-lg font-semibold text-gray-700">Buy Enactus Products</h3>
-        <a
-          href="https://enactus.org/products"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 px-4 py-2 text-white bg-enactusYellow hover:bg-yellow-600 rounded-lg"
-        >
-          Shop Now
-        </a>
+        
+        <img className="object-fill overflow-y-auto w-full h-full " src={asset.en6}/>
       </div>
     </div>)
   );
@@ -149,14 +143,14 @@ const SkeletonFour = () => {
         variants={variants}
         className="h-full w-1/3 rounded-2xl bg-white p-4 border border-gray-300 flex flex-col items-center justify-center">
         <img
-          src={img1}
+          src={asset.utkarsh}
           alt="avatar"
           height="100"
           width="100"
           className="rounded-full h-10 w-10" />
         <p
           className="sm:text-sm text-xs text-center font-semibold text-gray-700 mt-4">
-          John Doe
+          Utkarsh Sharma
         </p>
         <p
           className="border border-red-500 bg-red-100 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -166,14 +160,14 @@ const SkeletonFour = () => {
       <motion.div
         className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 border border-gray-300 flex flex-col items-center justify-center">
         <img
-          src={img2}
+          src={asset.roysha}
           alt="avatar"
           height="100"
           width="100"
           className="rounded-full h-10 w-10" />
         <p
           className="sm:text-sm text-xs text-center font-semibold text-gray-700 mt-4">
-          Jane Smith
+          Aditya Roysha
         </p>
         <p
           className="border border-green-500 bg-green-100 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -184,14 +178,14 @@ const SkeletonFour = () => {
         variants={second}
         className="h-full w-1/3 rounded-2xl bg-white p-4 border border-gray-300 flex flex-col items-center justify-center">
         <img
-          src={img3}
+          src={asset.shreyansh}
           alt="avatar"
           height="100"
           width="100"
           className="rounded-full h-10 w-10" />
         <p
           className="sm:text-sm text-xs text-center font-semibold text-gray-700 mt-4">
-          Alex Johnson
+          Shreyansh Singh
         </p>
         <p
           className="border border-orange-500 bg-orange-100 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
@@ -237,7 +231,7 @@ const SkeletonFive = () => {
         variants={variants}
         className="flex flex-row rounded-2xl border border-gray-300 p-2 items-start space-x-2 bg-white">
         <img
-          src={img1}
+          src={asset.roysha}
           alt="avatar"
           height="100"
           width="100"
@@ -292,10 +286,10 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-gray-700" />,
   },
   {
-    title: "Portfolio",
+    title: "Team",
     description: (
       <span className="text-sm">
-        Explore our portfolio of impactful projects.
+        Innovating Today, Inspiring Tomorrow!"
       </span>
     ),
     header: <SkeletonFour />,
@@ -303,10 +297,10 @@ const items = [
     icon: <IconTableColumn className="h-4 w-4 text-gray-700" />,
   },
   {
-    title: "Text Summarization",
+    title: "Enactus MNNIT:",
     description: (
       <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
+        Ideas that Impact.
       </span>
     ),
     header: <SkeletonFive />,
