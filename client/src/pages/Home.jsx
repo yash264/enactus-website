@@ -1,7 +1,7 @@
 import ImagesSlider from "../components/Home/ImagesSlider.jsx";
-import AnimatedTestimonials from "../components/Home/AnimatedTestimonials.jsx";
+//import AnimatedTestimonials from "../components/Home/AnimatedTestimonials.jsx";
 import React from "react";
-import HeroParallax, { Header } from "../components/Home/AnimateSlider.jsx";
+//import HeroParallax, { Header } from "../components/Home/AnimateSlider.jsx";
 import { FlipWords } from "../components/Home/UI/Flip-words.jsx";
 
 import img1 from "../assets/Home/portfolio-1.jpg";
@@ -45,10 +45,10 @@ const HomePage = () => {
         <AnimatedTestimonials autoplay={true} />
       </div> */}
 
-      {/*<div>
+      <div>
         <News />
-      </div>*/}
-      
+      </div>
+
     </div>
   );
 };

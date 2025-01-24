@@ -5,12 +5,12 @@ const News = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_KEY = "01a6212535b44da88726239ec4b81844"; // Replace with your actual API key
-  const API_URL = `https://newsapi.org/v2/everything?q="Enactus India" OR "Enactus USA" OR "NGO" OR "social work"&apiKey=${API_KEY}`;
-
   useEffect(() => {
     const fetchNews = async () => {
       try {
+        const API_KEY = "01a6212535b44da88726239ec4b81844"; // Replace with your actual API key
+        const API_URL = `https://newsapi.org/v2/everything?q="Enactus India" OR "Enactus USA" OR "NGO" OR "social work"&apiKey=${API_KEY}`;
+
         const response = await fetch(API_URL);
         if (!response.ok) {
           throw new Error("Failed to fetch news");

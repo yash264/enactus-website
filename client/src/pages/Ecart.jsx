@@ -8,15 +8,6 @@ import {asset} from '../images/asset.js'
 import { ToastContainer, toast } from 'react-toastify';
 
 
-
-
-
-
-
- 
-
-
-
 const products = [
   {
     id: 1,
