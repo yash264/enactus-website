@@ -78,15 +78,17 @@ const Content = () => {
           >
             {showPresent ? (
               <Template
-                name={["Shruti Mayank", "Himanshu Tripathi", "Shaurya Raj Srivastava", "Aniket Shah"]}
-                yr={["2024", "2024", "2024", "2024"]}
-                url={["/", "/", "/", "/"]}
+                name={["Shreyansh Singh", "Rahul Kharwar", "Shresth Gadhwala", "Roshan Kumar"]}
+                yr={["2025", "2026", "2026", "2026"]}
+                url={["https://www.linkedin.com/in/shreyansh-singh-59338b230", "https://www.linkedin.com/in/rahul-kharwar-87775526a/", "https://www.linkedin.com/in/shresth2301/", "https://www.linkedin.com/in/roshan-kumar-35579a1b7/"]}
+                email={["singhshreyansh718@gmail.com","rahulkharwar250704@gmail.com","shresthgadhwala2301@gmail.com","krroshan002@gmail.com"]}
               />
             ) : (
               <Template
                 name={["Gawtham Vellore", "Adya Sharma", "Himanshu Tripathi", "Shruti Mayank"]}
                 yr={["2019", "2021", "2009", "2022"]}
                 url={["/", "/", "/", "/"]}
+                email={["singhshreyansh718@gmail.com","/","/","/"]}
               />
             )}
           </motion.div>
